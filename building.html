@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 13.0px 'Helvetica Neue'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}
+  </style>
+</head>
+<body>
+<p dir="rtl" class="p1">&lt;!DOCTYPE html&gt;</p>
+<p dir="rtl" class="p1">&lt;html lang="ar" dir="rtl"&gt;</p>
+<p dir="rtl" class="p1">&lt;head&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;حاسبة كفاءة المباني&lt;/title&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="style.css" /&gt;</p>
+<p dir="rtl" class="p1">&lt;/head&gt;</p>
+<p dir="rtl" class="p1">&lt;body&gt;</p>
+<p dir="rtl" class="p1">&lt;header class="site-header"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container header-wrap"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;h1 class="brand"&gt;بطاقة كفاءة الطاقة&lt;/h1&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;ul class="nav"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="index.html"&gt;الرئيسية&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a class="active" href="building.html"&gt;حاسبة المباني&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="devices.html"&gt;حاسبة الأجهزة&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="info.html"&gt;المعلومات&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="faq.html"&gt;الأسئلة الشائعة&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1">&lt;/header&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1">&lt;main class="container"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;section class="section"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;حاسبة كفاءة المباني&lt;/h2&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;p class="lead"&gt;أدخل مساحة المبنى (م²) والاستهلاك السنوي (kWh) — نعرض لك الكثافة والتصنيف (أ/ب/ج) مع شريط ألوان.&lt;/p&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;form class="grid form-grid" onsubmit="event.preventDefault(); calculateBuilding();"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="field"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;label for="area"&gt;مساحة المبنى (م²)&lt;/label&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;input id="area" type="number" min="1" placeholder="مثال: 200" required /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="field"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;label for="annualConsumption"&gt;الاستهلاك السنوي (kWh)&lt;/label&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;input id="annualConsumption" type="number" min="1" placeholder="مثال: 9000" required /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="actions"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;button type="submit" class="btn btn-primary"&gt;احسب التصنيف&lt;/button&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;button type="reset" class="btn btn-ghost" onclick="clearBuilding()"&gt;مسح&lt;/button&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;div id="result" class="result section" style="margin-top:16px; display:none;"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="summary"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;div class="kpi"&gt;&lt;div&gt;مساحة المبنى&lt;/div&gt;&lt;b id="kpi-area"&gt;—&lt;/b&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;div class="kpi"&gt;&lt;div&gt;كثافة الاستهلاك&lt;/div&gt;&lt;b id="kpi-density"&gt;—&lt;/b&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;div class="kpi"&gt;&lt;div&gt;التصنيف&lt;/div&gt;&lt;b id="kpi-rating"&gt;—&lt;/b&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="label-scale-3" aria-label="Energy label A/B/C"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grade-a"&gt;أ&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grade-b"&gt;ب&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;div class="grade-c"&gt;ج&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;div id="needle" class="needle"&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="muted"&gt;* أ = أفضل كفاءة — ج = أقل كفاءة (حدود إرشادية قابلة للتعديل).&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p dir="rtl" class="p1">&lt;/main&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1">&lt;footer class="site-footer"&gt;&lt;div class="container"&gt;© &lt;span id="yr"&gt;&lt;/span&gt; بطاقة كفاءة الطاقة&lt;/div&gt;&lt;/footer&gt;</p>
+<p dir="rtl" class="p1">&lt;script src="script.js"&gt;&lt;/script&gt;</p>
+<p dir="rtl" class="p1">&lt;/body&gt;</p>
+<p dir="rtl" class="p1">&lt;/html&gt;</p>
+</body>
+</html>

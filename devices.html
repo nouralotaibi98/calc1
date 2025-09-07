@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 13.0px 'Helvetica Neue'}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 13.0px 'Helvetica Neue'; min-height: 15.0px}
+  </style>
+</head>
+<body>
+<p dir="rtl" class="p1">&lt;!DOCTYPE html&gt;</p>
+<p dir="rtl" class="p1">&lt;html lang="ar" dir="rtl"&gt;</p>
+<p dir="rtl" class="p1">&lt;head&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width,initial-scale=1" /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;حاسبة استبدال الأجهزة&lt;/title&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="style.css" /&gt;</p>
+<p dir="rtl" class="p1">&lt;/head&gt;</p>
+<p dir="rtl" class="p1">&lt;body&gt;</p>
+<p dir="rtl" class="p1">&lt;header class="site-header"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container header-wrap"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;h1 class="brand"&gt;بطاقة كفاءة الطاقة&lt;/h1&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;nav&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;ul class="nav"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="index.html"&gt;الرئيسية&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="building.html"&gt;حاسبة المباني&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a class="active" href="devices.html"&gt;حاسبة الأجهزة&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="info.html"&gt;المعلومات&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;a href="faq.html"&gt;الأسئلة الشائعة&lt;/a&gt;&lt;/li&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/ul&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1">&lt;/header&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1">&lt;main class="container"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;section class="section"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;حاسبة استبدال الأجهزة&lt;/h2&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;p class="lead"&gt;قارن بين جهاز قديم وجديد لمعرفة التوفير السنوي والمتراكم.&lt;/p&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;form class="grid form-grid" onsubmit="event.preventDefault(); calcDevices();"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="field"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;label for="oldW"&gt;قدرة الجهاز القديم (واط)&lt;/label&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;input id="oldW" type="number" min="0" placeholder="مثال: 1800" required /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="field"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;label for="newW"&gt;قدرة الجهاز الجديد (واط)&lt;/label&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;input id="newW" type="number" min="0" placeholder="مثال: 1200" required /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="field"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;label for="hrsDay"&gt;ساعات التشغيل يوميًا&lt;/label&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;input id="hrsDay" type="number" min="0" step="0.1" placeholder="مثال: 6" required /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="field"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;label for="daysYear"&gt;أيام التشغيل سنويًا&lt;/label&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;input id="daysYear" type="number" min="1" max="366" value="365" required /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="field"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;label for="priceKwh"&gt;سعر الكهرباء (د.ك لكل kWh)&lt;/label&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;input id="priceKwh" type="number" min="0" step="0.001" value="0.070" required /&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="actions"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;button type="submit" class="btn btn-primary"&gt;احسب التوفير&lt;/button&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">        </span>&lt;button type="reset" class="btn btn-ghost" onclick="clearDevices()"&gt;مسح&lt;/button&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;/form&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;div id="rep-summary" class="summary hide"&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi"&gt;&lt;div&gt;استهلاك القديم&lt;/div&gt;&lt;b id="oldKwh"&gt;0 kWh/سنة&lt;/b&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi"&gt;&lt;div&gt;استهلاك الجديد&lt;/div&gt;&lt;b id="newKwh"&gt;0 kWh/سنة&lt;/b&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi"&gt;&lt;div&gt;التوفير السنوي&lt;/div&gt;&lt;b id="saveKwh"&gt;0 kWh&lt;/b&gt;&lt;div class="muted" id="saveKd"&gt;0 د.ك&lt;/div&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi"&gt;&lt;div&gt;خلال 5 سنوات&lt;/div&gt;&lt;b id="save5"&gt;0 د.ك&lt;/b&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">      </span>&lt;div class="kpi"&gt;&lt;div&gt;خلال 10 سنوات&lt;/div&gt;&lt;b id="save10"&gt;0 د.ك&lt;/b&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">    </span>&lt;div class="muted" style="margin-top:8px"&gt;&lt;small&gt;الحسبة تقديرية وتعتمد على ساعات التشغيل الفعلية وسعر الكهرباء.&lt;/small&gt;&lt;/div&gt;</p>
+<p dir="rtl" class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p dir="rtl" class="p1">&lt;/main&gt;</p>
+<p dir="rtl" class="p2"><br></p>
+<p dir="rtl" class="p1">&lt;footer class="site-footer"&gt;&lt;div class="container"&gt;© &lt;span id="yr"&gt;&lt;/span&gt; بطاقة كفاءة الطاقة&lt;/div&gt;&lt;/footer&gt;</p>
+<p dir="rtl" class="p1">&lt;script src="script.js"&gt;&lt;/script&gt;</p>
+<p dir="rtl" class="p1">&lt;/body&gt;</p>
+<p dir="rtl" class="p1">&lt;/html&gt;</p>
+</body>
+</html>

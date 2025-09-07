@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الأسئلة الشائعة</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-wrap">
+    <h1 class="brand">بطاقة كفاءة الطاقة</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="building.html">حاسبة المباني</a></li>
+        <li><a href="devices.html">حاسبة الأجهزة</a></li>
+        <li><a href="info.html">المعلومات</a></li>
+        <li><a class="active" href="faq.html">الأسئلة الشائعة</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section">
+    <h2>الأسئلة الشائعة</h2>
+    <p class="lead">إجابات سريعة حول الحاسبات وتصنيف الكفاءة.</p>
+
+    <div class="card">
+      <details open><summary>شنو يعني تصنيف أ/ب/ج؟</summary><p>مقياس مبسّط: <b>أ</b> أعلى كفاءة، <b>ب</b> متوسطة، <b>ج</b> أقل كفاءة. يعتمد على كثافة الاستهلاك (kWh/m²·year).</p></details>
+      <details><summary>شلون أحسب كفاءة المبنى؟</summary><p>أدخل مساحة المبنى بالكيلو متر المربع والاستهلاك السنوي (kWh)، النظام يحسب الكثافة ويعطيك التصنيف مع شريط ألوان.</p></details>
+      <details><summary>هل الأرقام ثابتة؟</summary><p>الحدود الحالية إرشادية (50 / 100). تقدر تغيّرها في <code>script.js</code> بسهولة.</p></details>
+      <details><summary>حاسبة الأجهزة شلون تشتغل؟</summary><p>تعتمد على القدرة (واط)، ساعات/أيام التشغيل، وسعر الكهرباء لحساب التوفير السنوي والمتراكم.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container">© <span id="yr"></span> بطاقة كفاءة الطاقة</div></footer>
+<script src="script.js"></script>
+</body>
+</html>

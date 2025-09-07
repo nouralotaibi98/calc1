@@ -1,0 +1,69 @@
+/* ===== أساسيات ===== */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Tahoma","Segoe UI",sans-serif;
+  margin:0; padding:0;
+  background:#f5f8fc; color:#1f2937; line-height:1.6;
+}
+.container{max-width:1100px; margin:0 auto; padding:0 16px}
+
+/* ===== هيدر/ناف ===== */
+.site-header{background:linear-gradient(90deg,#00356b,#0055aa); color:#fff; position:sticky; top:0; z-index:50}
+.header-wrap{display:flex; justify-content:space-between; align-items:center; padding:12px 0}
+.brand{margin:0; font-weight:800; font-size:1.25rem}
+.nav{list-style:none; display:flex; gap:10px; margin:0; padding:0}
+.nav a{color:#fff; text-decoration:none; font-weight:700; padding:6px 10px; border-radius:8px}
+.nav a:hover,.nav a.active{background:rgba(255,255,255,.22)}
+
+/* ===== أقسام / بطاقات ===== */
+.section{
+  background:#fff; border-radius:14px;
+  box-shadow:0 6px 18px rgba(0,0,0,.08);
+  padding:20px; margin:20px 0;
+}
+h1,h2,h3{color:#004080; margin-top:0}
+.lead{color:#6b7280; font-size:.95rem}
+.grid{display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:#fff; border-radius:14px; padding:18px; box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.icon{width:40px; height:40px; border-radius:10px; display:grid; place-items:center; background:#e6f0ff; color:#004080; font-weight:800}
+
+/* ===== أزرار ===== */
+.btn{display:inline-block; padding:10px 14px; border:none; border-radius:10px; font-weight:800; text-decoration:none; cursor:pointer; text-align:center}
+.btn-primary{background:#004080; color:#fff}
+.btn-primary:hover{background:#0055aa}
+.btn-ghost{background:#fff; border:2px solid #004080; color:#004080}
+.btn-ghost:hover{background:#f0f5ff}
+
+/* ===== فورم ===== */
+form{display:grid; gap:14px; margin-top:10px}
+.field{display:flex; flex-direction:column}
+label{font-weight:800; margin-bottom:6px}
+input{padding:10px 12px; border:1px solid #e5e7eb; border-radius:10px; font-size:.95rem}
+
+/* ===== ملخصات ===== */
+.summary{display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); margin-top:14px}
+.kpi{background:#fff; border-radius:12px; padding:14px; box-shadow:0 2px 6px rgba(0,0,0,.06); text-align:center}
+.kpi b{color:#004080; font-size:1.1rem}
+.muted{color:#6b7280; font-size:.85rem}
+.hide{display:none}
+
+/* ===== شريط تصنيف أ/ب/ج ===== */
+.label-scale-3{
+  position:relative; display:grid; grid-template-columns:repeat(3,1fr);
+  height:54px; border-radius:14px; overflow:hidden; margin-top:14px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08); color:#fff; font-weight:800; text-align:center
+}
+.label-scale-3>div{display:grid; place-items:center; font-size:1rem}
+.grade-a{background:#0b8a2a} /* أخضر */
+.grade-b{background:#f1b600} /* أصفر */
+.grade-c{background:#d84315} /* برتقالي/أحمر */
+.needle{position:absolute; top:-6px; width:2px; height:66px; background:#111; box-shadow:0 0 0 3px rgba(255,255,255,.65); left:0; transform:translateX(-1px)}
+
+/* ===== جداول (لصفحة الأجهزة) ===== */
+table{width:100%; border-collapse:collapse; margin-top:12px}
+th,td{padding:10px; border:1px solid #e5e7eb; text-align:center}
+th{background:#e6f0ff; color:#004080}
+
+/* ===== فوتر ===== */
+.site-footer{background:#00356b; color:#fff; text-align:center; padding:12px; margin-top:20px}
