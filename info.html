@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>معلومات بطاقة كفاءة الطاقة</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>بطاقات كفاءة الطاقة</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-wrap">
-    <h1 class="brand">بطاقة كفاءة الطاقة</h1>
-    <nav>
+  <!-- الهيدر -->
+  <header class="site-header">
+    <div class="container header-wrap">
+      <h1 class="brand">بطاقات كفاءة الطاقة</h1>
       <ul class="nav">
-        <li><a href="index.html">الرئيسية</a></li>
+        <li class="active"><a href="index.html">الرئيسية</a></li>
         <li><a href="building.html">حاسبة المباني</a></li>
         <li><a href="devices.html">حاسبة الأجهزة</a></li>
-        <li><a class="active" href="info.html">المعلومات</a></li>
+        <li><a href="info.html">معلومات</a></li>
         <li><a href="faq.html">الأسئلة الشائعة</a></li>
       </ul>
-    </nav>
-  </div>
-</header>
-
-<main class="container">
-  <section class="section">
-    <h2>معلومات حول بطاقة كفاءة الطاقة</h2>
-    <p class="lead">فوائد البطاقة وكيف تُقرأ، ولماذا تهمك كمستخدم أو مطوّر عقاري.</p>
-
-    <div class="grid">
-      <div class="card"><div class="icon">⚡</div><h3>ما هي البطاقة؟</h3><p>بطاقة توضّح استهلاك الطاقة للأجهزة والمباني عبر تصنيف واضح من <b>أ</b> (الأعلى كفاءة) إلى <b>ج</b> (الأقل كفاءة).</p></div>
-      <div class="card"><div class="icon">💰</div><h3>الفوائد</h3><ul><li>تقليل فاتورة الكهرباء.</li><li>سهولة مقارنة النماذج.</li><li>رفع قيمة العقار.</li></ul></div>
-      <div class="card"><div class="icon">🌱</div><h3>الأثر البيئي</h3><p>خفض الاستهلاك يقلل الانبعاثات ويخفف الضغط على الشبكة ويدعم الاستدامة.</p></div>
-      <div class="card"><div class="icon">🧮</div><h3>كيف تُحسب؟</h3><p>نحوّل الاستهلاك السنوي (kWh) إلى كثافة على مساحة المبنى (kWh/m²·year)، ثم إلى تصنيف لوني.</p></div>
-      <div class="card"><div class="icon">🏠</div><h3>لمن موجهة؟</h3><p>للأفراد والشركات والمكاتب الهندسية والمطورين العقاريين.</p></div>
-      <div class="card"><div class="icon">🎯</div><h3>الأهداف</h3><p>ترشيد الاستهلاك، رفع الكفاءة، ونشر الوعي بكفاءة الطاقة.</p></div>
     </div>
-  </section>
-</main>
+  </header>
 
-<footer class="site-footer"><div class="container">© <span id="yr"></span> بطاقة كفاءة الطاقة</div></footer>
-<script src="script.js"></script>
+  <!-- المحتوى الرئيسي -->
+  <main class="container">
+    <section class="section">
+      <h2>👋 مرحباً بك</h2>
+      <p class="lead">هنا لحساب كفاءة المباني والأجهزة ونقل كل الإرشادات – كل شيء داخل الموقع.</p>
+
+      <div class="grid" style="margin-top:10px">
+        <!-- كرت المباني -->
+        <div class="card">
+          <div class="icon"></div>
+          <h3>حاسبة كفاءة المباني</h3>
+          <p>احسب كثافة الاستهلاك السنوي (ك.و.س/م²) + كتلة الاستهلاك السنوي + خريطة البيان</p>
+          <a class="btn btn-primary" href="building.html">افتح الحاسبة</a>
+        </div>
+
+        <!-- كرت الأجهزة -->
+        <div class="card">
+          <div class="icon"></div>
+          <h3>حاسبة استبدال الأجهزة</h3>
+          <p>قارن بين الجهاز القديم والجديد لمعرفة التوفير في الكهرباء والمال خلال سنة أو أكثر.</p>
+          <a class="btn btn-primary" href="devices.html">افتح الحاسبة</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- الفوتر -->
+  <footer class="site-footer">
+    <div class="container">
+      <span id="yr">© 2025</span> بطاقات كفاءة الطاقة - وزارة الكهرباء والماء
+    </div>
+  </footer>
 </body>
 </html>
